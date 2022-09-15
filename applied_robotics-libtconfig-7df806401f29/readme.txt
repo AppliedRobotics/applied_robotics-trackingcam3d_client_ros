@@ -1,1 +1,0 @@
-parameter = value style text configurator

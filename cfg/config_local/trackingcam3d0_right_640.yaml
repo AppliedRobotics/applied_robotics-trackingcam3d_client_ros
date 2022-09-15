@@ -1,0 +1,27 @@
+image_width: 640
+image_height: 480
+camera_name: trackingcam3d0_right_640
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [505.6526 ,   0.     , 306.0203 ,
+           0.     , 507.56275, 241.95382,
+           0.     ,   0.     ,   1.     ]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [-0.366768, 0.130305, -0.000695, -0.000074, 0.000000]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [ 0.98479161, -0.16397437,  0.05742731,
+          0.16337719,  0.98645   ,  0.01497616,
+         -0.05910488, -0.00536608,  0.99823736]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [ 595.88044,    0.     ,  242.32212, -152.73707,
+            0.     ,  595.88044,  241.05363,    0.     ,
+            0.     ,    0.     ,    1.     ,    0.     ]
+
