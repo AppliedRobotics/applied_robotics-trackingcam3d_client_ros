@@ -1,0 +1,13 @@
+/home/nik/work/priklad/stereo_cam/applied_robotics-libtconfig-7df806401f29/build/CMakeFiles/install/strip.dir
+/home/nik/work/priklad/stereo_cam/applied_robotics-libtconfig-7df806401f29/build/CMakeFiles/install/local.dir
+/home/nik/work/priklad/stereo_cam/applied_robotics-libtconfig-7df806401f29/build/CMakeFiles/install.dir
+/home/nik/work/priklad/stereo_cam/applied_robotics-libtconfig-7df806401f29/build/CMakeFiles/list_install_components.dir
+/home/nik/work/priklad/stereo_cam/applied_robotics-libtconfig-7df806401f29/build/CMakeFiles/rebuild_cache.dir
+/home/nik/work/priklad/stereo_cam/applied_robotics-libtconfig-7df806401f29/build/CMakeFiles/edit_cache.dir
+/home/nik/work/priklad/stereo_cam/applied_robotics-libtconfig-7df806401f29/build/src/CMakeFiles/install/local.dir
+/home/nik/work/priklad/stereo_cam/applied_robotics-libtconfig-7df806401f29/build/src/CMakeFiles/install.dir
+/home/nik/work/priklad/stereo_cam/applied_robotics-libtconfig-7df806401f29/build/src/CMakeFiles/list_install_components.dir
+/home/nik/work/priklad/stereo_cam/applied_robotics-libtconfig-7df806401f29/build/src/CMakeFiles/rebuild_cache.dir
+/home/nik/work/priklad/stereo_cam/applied_robotics-libtconfig-7df806401f29/build/src/CMakeFiles/edit_cache.dir
+/home/nik/work/priklad/stereo_cam/applied_robotics-libtconfig-7df806401f29/build/src/CMakeFiles/install/strip.dir
+/home/nik/work/priklad/stereo_cam/applied_robotics-libtconfig-7df806401f29/build/src/CMakeFiles/tconfig.dir

@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/tconfig/tconfig_param.h
+map
+-
+vector
+-
+string
+-
+sstream
+-
+iterator
+-
+stdio.h
+-
+cstring
+-
+cstdlib
+-
+limits
+-
+cmath
+-
+cfloat
+-
+
+/home/nik/work/priklad/stereo_cam/applied_robotics-libtconfig-7df806401f29/src/tconfig_param.cpp
+tconfig_param.h
+/home/nik/work/priklad/stereo_cam/applied_robotics-libtconfig-7df806401f29/src/tconfig_param.h
+cfloat
+-
+windows.h
+-
+tchar.h
+-
+limits.h
+-
+stdlib.h
+-
+

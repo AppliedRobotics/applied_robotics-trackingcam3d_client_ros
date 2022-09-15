@@ -1,0 +1,7 @@
+/usr/local/lib/cmake/libtconfig/libtconfig-config.cmake
+/usr/local/lib/cmake/libtconfig/libtconfig-config-version.cmake
+/usr/local/lib/cmake/libtconfig/libtconfig-targets.cmake
+/usr/local/lib/cmake/libtconfig/libtconfig-targets-noconfig.cmake
+/usr/local/include/tconfig/tconfig.h
+/usr/local/include/tconfig/tconfig_param.h
+/usr/local/lib/libtconfig.so
