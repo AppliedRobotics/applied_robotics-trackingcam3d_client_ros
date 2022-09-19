@@ -49,7 +49,7 @@ void img_callback(const sensor_msgs::ImageConstPtr &img_msg)
     }
     // Step3:  Publish point cloud 
     pcl::toROSMsg(*cloud, point_cloud2);
-    point_cloud2.header.frame_id = "stereo_camera";
+    point_cloud2.header.frame_id = "stereo_camera_first";
     pub_point_cloud2.publish(point_cloud2);
 }
 

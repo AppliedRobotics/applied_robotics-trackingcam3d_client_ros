@@ -3,17 +3,17 @@
                 <param name="push_calib" value="0" /> 
 		<param name="info_url" value="$(find trackingcam3d_client_ros)/cfg/"/>
         </node>
-        <node pkg="trackingcam3d_client_ros" type="set_param_camera" name="set_param_camera" />
+        <!--<node pkg="trackingcam3d_client_ros" type="set_param_camera" name="set_param_camera" /> -->
         <node pkg="trackingcam3d_client_ros" type="convert_node" name="broadcaster_frame" />
         <node pkg="trackingcam3d_client_ros" type="frame_tf_broadcaster" name="frame_tf_broadcaster" >
                 <param name="robot_name" value="map" /> 
-                <param name="x" value="0" /> 
-                <param name="y" value="0" /> 
-                <param name="z" value="0.5" /> 
-                <param name="q1" value="0" /> 
-                <param name="q2" value="-1.5" /> 
-                <param name="q3" value="1.5" /> 
-                <param name="q4" value="0" /> 
+                <param name="x_camera" value="0" /> 
+                <param name="y_camera" value="0" /> 
+                <param name="z_camera" value="0.5" /> 
+                <param name="q1_camera" value="0" /> 
+                <param name="q2_camera" value="0" /> 
+                <param name="q3_camera" value="0" /> 
+                <param name="q4_camera" value="1" /> 
         </node>
         <node type="rviz" name="rviz" pkg="rviz" args="-d $(find trackingcam3d_client_ros)/rviz/config.rviz" /> 
         
