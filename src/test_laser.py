@@ -12,7 +12,7 @@ from sensor_msgs.msg import Image, CameraInfo, LaserScan
 from cv_bridge import CvBridge, CvBridgeError
 import math
 
-class get_face_distance_from_camera:
+class Get_face_distance_from_camera:
 
   def __init__(self):     
      
@@ -44,6 +44,8 @@ class get_face_distance_from_camera:
     self.scan.range_max = 5.0
     self.scan.ranges = np.array([5.0] * 320)
     self.k_pixel = 320 / self.num_readings
+
+    self.heigt_floor = 0.07
 
   def callback(self, rgb_data, depth_data, camera_info):
     
@@ -98,15 +100,9 @@ class get_face_distance_from_camera:
                 if dist < dist_min[x] or dist_min[x] == 0.0:
                 #print(dist_str)
                   #print('dist ', dist_min[x])
-                  dist_min[x] = dist = float(math.sqrt(point_x * point_x + point_z * point_z))
-                  self.scan.ranges[x] = dist_min[x]
-                if self.scan.ranges[x] < 0.5:
-                  #print('z ', point_z)
-                  #print('x ', point_x)
-                  #print('y ', point_y)
-                  #print('dist ', dist)
-                  #print('_____________')
-                  pass
+                  if point_y < self.heigt_floor:
+                    dist_min[x] = dist = float(math.sqrt(point_x * point_x + point_z * point_z))
+                    self.scan.ranges[x] = dist_min[x]
       # for x in range(5, self.num_readings - 5):
       #   mean = (dist_min[x - 3] + dist_min[x -2] + dist_min[x - 1]  + dist_min[x + 1] + dist_min[x + 2] + dist_min[x + 3]) / 6
       #   k = dist_min[x] / mean
@@ -127,7 +123,7 @@ class get_face_distance_from_camera:
 
 def main(args):
   rospy.init_node('unibas_face_distance_calculator', anonymous=True)
-  fd = get_face_distance_from_camera()
+  fd = Get_face_distance_from_camera()
   try:
     rospy.spin()
   except KeyboardInterrupt:

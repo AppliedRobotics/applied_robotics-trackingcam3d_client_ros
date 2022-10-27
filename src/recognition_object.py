@@ -14,7 +14,7 @@ from visualization_msgs.msg import MarkerArray,Marker
 from geometry_msgs.msg import Pose
 import math
 
-class get_face_distance_from_camera:
+class Get_distance_from_camera:
 
   def __init__(self):     
     self.marker_array_msg = MarkerArray()
@@ -26,9 +26,6 @@ class get_face_distance_from_camera:
            	
     self.image_sub = message_filters.Subscriber("/trackingcam3d_client_ros/trackingcam3d0/left/image_raw",Image)
     self.depth_sub = message_filters.Subscriber("/trackingcam3d_client_ros/trackingcam3d0/depth/image_rect",Image)
-        
-    self.ts = message_filters.ApproximateTimeSynchronizer([self.image_sub, self.depth_sub, self.camera_info_sub], queue_size=10, slop=0.5)
-    self.ts.registerCallback(self.callback)
         
     self.pub = rospy.Publisher('/trackingcam3d_client_ros/recognition_object', Image, queue_size=1)	
     topic = '/trackingcam3d_client_ros/visualization_marker_array'
@@ -135,7 +132,7 @@ class get_face_distance_from_camera:
 
 def main(args):
   rospy.init_node('unibas_face_distance_calculator', anonymous=True)
-  fd = get_face_distance_from_camera()
+  fd = Get_distance_from_camera()
   try:
     rospy.spin()
   except KeyboardInterrupt:

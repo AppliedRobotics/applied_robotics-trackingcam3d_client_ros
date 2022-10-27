@@ -40,7 +40,7 @@ catkin_package(
 #  DEPENDS system_lib
 )
 
-include(cmake/FindZeroMQ.cmake)
+
 include_directories( ${catkin_INCLUDE_DIRS})
 add_subdirectory(src)
 
