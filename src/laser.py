@@ -102,6 +102,7 @@ class get_face_distance_from_camera:
                     #print('dist ', dist_min[x])
                         dist_min[x] = dist = float(math.sqrt(point_x * point_x + point_z * point_z))
                         self.scan.ranges[x] = dist_min[x]
+                        #self.scan.ranges[x] = 2
                     if self.scan.ranges[x] < 0.5:
                     #print('z ', point_z)
                     #print('x ', point_x)
@@ -116,6 +117,7 @@ class get_face_distance_from_camera:
       #     dist_min[x] = mean
         
       #   self.scan.ranges[x] = dist_min[x]
+      
       self.scan_pub.publish(self.scan)
       
             

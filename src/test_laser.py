@@ -19,7 +19,6 @@ class Get_face_distance_from_camera:
     self.bridge = CvBridge()
     
     self.camera_info_sub = message_filters.Subscriber('/trackingcam3d_client_ros/trackingcam3d0/left/camera_info', CameraInfo)
-           	
     self.image_sub = message_filters.Subscriber("/trackingcam3d_client_ros/trackingcam3d0/left/image_raw", Image)
     self.depth_sub = message_filters.Subscriber("/trackingcam3d_client_ros/trackingcam3d0/depth/image_rect", Image)
         
